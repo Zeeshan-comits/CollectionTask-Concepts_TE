@@ -7,7 +7,6 @@ public class StackDemo {
 	
 	public static void main(String[] args) {
 		
-		
 		Stack<Integer> stack = new Stack();
 		
 		stack.push(1);
@@ -16,7 +15,6 @@ public class StackDemo {
 		stack.push(4);
 		stack.push(5);
 		stack.push(6);
-		
 		
 		System.out.println(stack);
 		//stack.pop();
@@ -41,5 +39,7 @@ public class StackDemo {
 		
 		link.getLast(); // this will work as peek method.
 		link.removeLast(); // this is equivq;ent to pop method
+		
+		//System.out.println(link);
 	}
 }
