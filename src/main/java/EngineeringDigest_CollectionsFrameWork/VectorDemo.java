@@ -38,6 +38,9 @@ public class VectorDemo {
 		Vector<Integer> vector2 = new Vector(linkedList);
 		//System.out.println(vector2);
 		
+		Vector<Integer> vector3 = new Vector<>();
+		System.out.println(vector3);
+		
 		
 	}
 

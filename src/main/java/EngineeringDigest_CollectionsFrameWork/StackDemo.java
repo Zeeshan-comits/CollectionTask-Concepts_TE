@@ -37,6 +37,7 @@ public class StackDemo {
 		link.addLast(98);
 		link.addLast(199);
 		
+		
 		link.getLast(); // this will work as peek method.
 		link.removeLast(); // this is equivq;ent to pop method
 		
