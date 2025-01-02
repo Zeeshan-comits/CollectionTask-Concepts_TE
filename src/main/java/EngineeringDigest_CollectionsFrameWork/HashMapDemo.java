@@ -36,6 +36,6 @@ public class HashMapDemo {
 		System.out.println(hashmap);
 		
 		hashmap.remove(4);
-		System.out.println(hashmap) ;
+		System.out.println(hashmap);
 	}
 }

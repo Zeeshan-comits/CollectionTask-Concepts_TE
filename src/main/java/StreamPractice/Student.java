@@ -3,6 +3,7 @@ package StreamPractice;
 import java.util.Objects;
 
 public class Student {
+	
 	private String id;
     private String name;
     private String major;
@@ -10,6 +11,8 @@ public class Student {
     private int yearsOfEnrollment;
     private double gpa;
     private int numberOfIncompleteCourses;
+    
+    
 	public String getId() {
 		return id;
 	}
@@ -68,6 +71,7 @@ public class Student {
 	public int hashCode() {
 		return Objects.hash(age, gpa, id, major, name, numberOfIncompleteCourses, yearsOfEnrollment);
 	}
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -82,5 +86,4 @@ public class Student {
 				&& Objects.equals(name, other.name) && numberOfIncompleteCourses == other.numberOfIncompleteCourses
 				&& yearsOfEnrollment == other.yearsOfEnrollment;
 	}
-	
 }

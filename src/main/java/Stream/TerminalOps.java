@@ -4,6 +4,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 
 public class TerminalOps {
@@ -51,7 +52,7 @@ public class TerminalOps {
 		 System.out.println(num.stream().map(x -> x*x).sorted().collect(Collectors.toList()));
 		 
 		 
-		 // Summing Values.
+		 // Summing Values.	
 		 List<Integer> sum = Arrays.asList(45,64,83,67,9012);
 		 System.out.println(sum.stream().reduce(Integer:: sum).get());
 		 
@@ -62,5 +63,16 @@ public class TerminalOps {
 		 // stateful and stateless operation.
 		 
 		 
+		 //flatmap
+		 List<String> sentences = Arrays.asList(
+				 "Hello world",
+				 "flatmap is useful",
+				 "green pen"
+				 );
+		 
+		 System.out.println(((Stream<String>) sentences
+				 .stream().flatMap(sentencee ->
+				 Arrays.stream(sentencee.split(" ")))
+				 .map(String::toUpperCase)).collect(Collectors.toList()));
 	}
 }

@@ -156,7 +156,7 @@ public class ArrayyLiiisstt {
 //		list.remove(Integer.valueOf(1));
 		//System.out.println(list);
 		
-		
+		Iterable
 		
 
 			
