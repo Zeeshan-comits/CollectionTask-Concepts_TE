@@ -1,3 +1,4 @@
+// singleton  example.
 package SingletonPackage;
 
 public class Employee {

@@ -1,3 +1,4 @@
+// diamond problem example.
 package CollectionProgrammes;
 interface A {
     default void greet() {
